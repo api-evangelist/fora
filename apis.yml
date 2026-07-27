@@ -1,8 +1,26 @@
 aid: fora
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fora.png
 name: Fora
-description: 'Fora is a company surfaced as a portfolio company of forerunner-ventures, insight-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Fora is a modern, tech-enabled host travel agency headquartered in New York City,
+  founded in 2021 by Henley Vazquez, Evan Frank and Jake Peters. It equips independent travel
+  advisors with a custom booking portal, 700+ training videos, live support, preferred supplier
+  partnerships, an IATA number, E&O insurance and automated commission collection, powered by a
+  Travelport-backed booking platform and integrations such as Tablet Hotels. Fora runs a consumer
+  traveler app plus an advisor portal and is building agentic AI tooling (Via / Sidekick) to
+  streamline advisor workflows. Backed by Forerunner Ventures and Insight Partners, Fora does not
+  currently publish a public developer API; this profile tracks its identity and web properties
+  within the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/fora/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Travel
+- Travel Agency
+- Hospitality
+- Booking
+- Travel Advisors
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fora-domain-security.yml
 - type: Website
   url: https://foratravel.com
+- type: Blog
+  url: https://www.foratravel.com/the-journal
+- type: HelpCenter
+  url: https://www.foratravel.com/faq
+- type: Pricing
+  url: https://www.foratravel.com/join/pricing
+- type: SignUp
+  url: https://www.foratravel.com/join
+- type: Login
+  url: https://advisor.fora.travel
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
